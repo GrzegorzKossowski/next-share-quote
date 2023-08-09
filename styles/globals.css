@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.orange_gradient {
+    @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+}
+
+.green_gradient {
+    @apply bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent;
+}
+
+.blue_gradient {
+    @apply bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
+}
+
+.btn {
+    @apply rounded-full border border-black text-black bg-transparent py-1.5 px-5 transition-all hover:bg-black hover:text-white text-center text-sm flex items-center justify-center;
+}
+
+.btn_black {
+    @apply py-1.5 px-5 text-white bg-black transition-all hover:bg-white hover:text-black hover:border-black;
+}
+
+.dropdown {
+  @apply absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-white min-w-[210px] flex flex-col gap-2 justify-end items-end shadow-xl border;
+}
+
+.dropdown_link {
+  @apply text-sm text-gray-700 hover:text-gray-500 font-medium;
+}
