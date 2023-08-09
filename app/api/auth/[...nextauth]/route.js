@@ -28,7 +28,7 @@ const handler = NextAuth({
                 if (!credentials.email || !credentials.password) {
                     throw new Error('Please enter an email and password')
                 }
-                
+
                 // Add logic here to look up the user from the credentials supplied
                 const user = { id: "1", name: "J Smith", email: "jsmith@example.com" }
 
@@ -48,7 +48,7 @@ const handler = NextAuth({
         strategy: 'jwt'
     },
     pages: {
-        signIn: '/login',
+        signIn: '/signin',
     },
     callbacks: {
         async jwt({ token, user }) {
